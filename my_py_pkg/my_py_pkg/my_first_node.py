@@ -11,7 +11,7 @@ def main(args=None):
     rclpy.init(args=args) #initialize/start ros2 communicaion
     node = MyNode()
     rclpy.spin(node) #kept alive
-    rclpy.shutdown()#last line of the program  
+    rclpy.shutdown()#last line of the program to stop the node
 
 if __name__ == "__main__":
     main()
